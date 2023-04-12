@@ -23,30 +23,48 @@ Consigna:
 - El programa debe solicitar al usuario que ingrese un número para intentar adivinar el número generado.
 
 """
-
-print("Juego de adivinanzas de números.")
-print("Ingrese el rango de números para el juego y la cantidad de intentos máximos.")
+print()
+print("##### Juego de adivinanzas de números.#####")
+print("Consigna: Ingrese el rango de números para el juego y la cantidad de intentos máximos.")
 print()
 print()
 
 Limite_Inferior = int(input(" Ingrese un límite inferior de números: "))
+
 Limite_Superior = int(input(" Ingrese un límite superior de números: "))
+while Limite_Superior == 0 or Limite_Superior < Limite_Inferior:
+    Limite_Superior = int(input(" Ingrese un límite superior de números (debe ingresar un numero mayor a 0): "))
+
 Cantidad_Intentos_Max = int(input(" Ingrese la cantidad de intentos maximos: "))
+while Cantidad_Intentos_Max == 0:
+    Cantidad_Intentos_Max = int(input(" Ingrese la cantidad de intentos maximos (debe ingresar un numero mayor a 0): "))
+
 Intento = int(0)
-
+Adivinar_Numero = int(0)
 Numero_Aleatorio = random.randint(Limite_Inferior, Limite_Superior)
+IntentoPendiente = Cantidad_Intentos_Max
 
-if Intento != Cantidad_Intentos_Max or Adivinar_Numero == Numero_Aleatorio:
+print("El numero aleatoreo es: ", Numero_Aleatorio)
+print()
 
-    Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo: "))
-      
-    if Adivinar_Numero != Numero_Aleatorio:     
+while Intento < Cantidad_Intentos_Max and Adivinar_Numero != Numero_Aleatorio:
+
+    if Adivinar_Numero != Numero_Aleatorio:
+        
         Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo: "))
-    else:        
-        print("Usted adivino el numero aleatoreo", Numero_Aleatorio)
-    
+        while Adivinar_Numero == 0:     
+            Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo (debe ingresar un numero mayor a 0): "))
+
     Intento = Intento + 1
+    IntentoPendiente = IntentoPendiente -1
 
-else:
-
-    print("Finalizo el programa")
+    if IntentoPendiente != 0 and Adivinar_Numero != Numero_Aleatorio:
+        print("La cantiadd de intentos que le quedan: ", IntentoPendiente)
+    elif Adivinar_Numero == Numero_Aleatorio:
+        print("")
+        print("Usted adivino el numero aleatoreo", Numero_Aleatorio)
+        print("Fin del programa")
+    else:
+        print("")
+        print("Usted NO adivino el numero aleatoreo", Numero_Aleatorio)
+        print("Fin del programa")
