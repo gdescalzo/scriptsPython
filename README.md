@@ -1,4 +1,4 @@
-# Python Scripts
+# Phyton Scripts
 
 > On this repo you can find differents python scripts for differents matters.
 
