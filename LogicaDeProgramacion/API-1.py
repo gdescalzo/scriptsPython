@@ -52,8 +52,8 @@ while Intento < Cantidad_Intentos_Max and Adivinar_Numero != Numero_Aleatorio:
     if Adivinar_Numero != Numero_Aleatorio:
         
         Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo: "))
-        while Adivinar_Numero == 0:     
-            Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo (debe ingresar un numero mayor a 0): "))
+        while Adivinar_Numero == 0 or Adivinar_Numero < Limite_Inferior or Adivinar_Numero > Limite_Superior:     
+            Adivinar_Numero = int(input(" Ingrese un numero para intentar adivinar el numero aleatoreo (debe ingresar un numero mayor a 0 y superior al limiten inferior e inferiori al limite superior): "))
 
     Intento = Intento + 1
     IntentoPendiente = IntentoPendiente -1
