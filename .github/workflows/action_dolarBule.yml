@@ -17,8 +17,11 @@ jobs:
 
       - name: Install Python packages
         run: |
+          cd Others  # Cambiar al directorio donde se encuentra requirements.txt
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Execute Python script
-        run: python dolarBlue.py
+        run: |
+          cd Others  # Cambiar al directorio donde se encuentra dolarBlue.py
+          python dolarBlue.py
