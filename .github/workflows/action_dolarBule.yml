@@ -1,4 +1,4 @@
-name: Run dolarBlue.py
+name: RunDolarBlue
 
 on:
   workflow_dispatch:  # Se ejecuta a demanda
