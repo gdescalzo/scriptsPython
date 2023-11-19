@@ -1,12 +1,5 @@
 # OpenStackSDK
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Objective](#objective)
-- [Pre-Requisites](#pre-requisites)
-  - [SDK Requisites](#sdk-requisites-click-to-expand)
-
 ## Introduction
 
 > This repository contains information related to the OpenStackSDK, primarily focusing on listing, modifying, creating, and deleting resources within your OpenStack environment using the SDK interface.
