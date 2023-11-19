@@ -46,8 +46,42 @@
 
 > There is two ways based o the OpenStack Official documentation to create a [Connection Object](https://docs.openstack.org/openstacksdk/latest/user/connection.html#openstack.connection.Connection).
 
-> There is 3 ways to create a connection object (_here the [Link](https://docs.openstack.org/openstacksdk/latest/user/guides/connect.html) of the official documentation_) but the most re comended one is through [Config Files](https://docs.openstack.org/openstacksdk/latest/user/config/configuration.html#config-clouds-yaml)
+> There is 3 ways to create a connection object (_here the [Link](https://docs.openstack.org/openstacksdk/latest/user/guides/connect.html) of the official documentation_) but the most re comended one is through [Config Files](https://docs.openstack.org/openstacksdk/latest/user/config/configuration.html#config-clouds-yaml). For the testing case that you can see on this repo I used the **Config Files**
 
-> For the testing case that you can see on this repo I used the **Config Files**
+```
+# Example of creating a connection object using Config Files
+import openstack
+
+# Load connection configuration from the config file
+conn = openstack.connect(cloud='mycloud')
+```
+
+### Specify the service type
+
+> Specify the type of service you need to query within the OpenStack environment.
+
+```
+# Example of specifying the service type
+service_type = 'compute'
+```
+
+### Specify the resource type
+
+> Specify the type of resource you want to interact with within the OpenStack environment.
+
+```
+# Example of specifying the resource type
+resource_type = 'servers'
+```
+
+
+### Specify the version of the component
+
+> Specify the version of the OpenStack component you want to modify, create, delete, or list.
+
+```
+# Example of specifying the version of the component
+component_version = 'v2.1'
+```
 
 </details>
