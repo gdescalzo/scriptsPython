@@ -8,8 +8,6 @@
 
 > To interact with the OpenStack platform through this SDK, certain requirements must be met to ensure access to the OpenStack environment. The interaction process is outlined as follows:
 
-![1700345265511](image/README/1700345265511.png)
-
 > As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
 
 ## Objective
