@@ -85,7 +85,7 @@ component_version = 'v2.1'
 
 </details>
 
-## Document related
+## Sources documents
 
 - [Getting Started with OpenStack Python SDK](https://www.sebae.net/videos/getting-started-with-openstack-python-sdk-2/)
 - [Connecting to openstack using openstacksdk in python](https://www.youtube.com/watch?v=ApEPfhKmVWE)
