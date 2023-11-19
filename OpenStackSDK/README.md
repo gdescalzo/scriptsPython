@@ -74,8 +74,7 @@ service_type = 'compute'
 resource_type = 'servers'
 ```
 
-
-### Specify the version of the component
+### Specify the version
 
 > Specify the version of the OpenStack component you want to modify, create, delete, or list.
 
