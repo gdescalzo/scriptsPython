@@ -1,4 +1,4 @@
-[Toc]
+[TOC]
 
 # OpenStackSDK
 
@@ -11,6 +11,11 @@
 ![1700345265511](image/README/1700345265511.png)
 
 > As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
+
+## Objective
+
+> Testing OpenStack functionalities using the Python library. Establishing connectivity with Horizon and other OpenStack components through the SDK.
+
 
 ## Pre-Requisits
 
