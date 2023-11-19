@@ -1,5 +1,3 @@
-[TOC]
-
 # OpenStackSDK
 
 ## Introduction
