@@ -1,25 +1,27 @@
+[Toc]
+
 # OpenStackSDK
 
 ## Introduction
 
-> On this repo you will find information related to the OpenStackSDK, the scope of this repo is mostly list, modify, create, and delete resources on your OpenStack enviroment, through the SDK interface.
-> In order to do so, there is some requirements that you have to fullfil in order to have access to the OpenStack Enviromen.
-> The way that we will interact with the OpenStack platform is the follwing:
+> This repository contains information related to the OpenStackSDK, primarily focusing on listing, modifying, creating, and deleting resources within your OpenStack environment using the SDK interface.
+
+> To interact with the OpenStack platform through this SDK, certain requirements must be met to ensure access to the OpenStack environment. The interaction process is outlined as follows:
 
 ![1700345265511](image/README/1700345265511.png)
 
-> As can we see on the image, the openstack open the differents services that can be consumed from outside through SDK, stablishing a HTTPS tunnel to "talk" with the differents endpoints in order to obtain a response.
+> As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
 
 ## Pre-Requisits
 
-> For all works fine, depending your platform you should have to prepare your enviroment with the follwing considerations:
+> To ensure everything works seamlessly, you need to prepare your environment based on your platform, taking into account the following considerations:
 
 <details>
-<summary>SDK Requisitos (click para expandir)</summary>
+<summary>SDK Requisits (click para expandir)</summary>
 
 > Required software
 
-> In my case, on the moment to test all this, I have to do it on Windows, but probably for you can be different the requirements, depending your operating system.
+> In my case, when testing all these functionalities, I had to perform the tasks on Windows. However, the requirements may vary for you, depending on your operating system.
 
 - Install [Python](https://www.python.org/downloads/)
 - Upgrade [pip](https://www.wikihow.com/Update-Pip)
