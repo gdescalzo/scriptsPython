@@ -21,18 +21,33 @@
 <details>
 <summary>SDK Requisites (click to expand)</summary>
 
-> Software required
+### Software required
+
+> In my case of study I made all test over Windows platform
 
 - Install [Python](https://www.python.org/downloads/)
 - Upgrade [pip](https://www.wikihow.com/Update-Pip)
 - Install [Microsoft Visual C++](https://learn.microsoft.com/es-es/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 - Install [OpenStack SDK](https://docs.openstack.org/openstacksdk/latest/install/index.html)
 
-> Configuration
+</details>
+
+<details>
+<summary>SDK ### Configuration (click to expand)</summary>
+
+> To use the SDK you should have the configure:
 
 1. Create "Connection Object"
 2. Specify the service type that you have to query
 3. Specify the resource type that you have to query
 4. Specify the version of the component that you want to modify, create, delete or list.
+
+### Object Connection
+
+> There is two ways based o the OpenStack Official documentation to create a [Connection Object](https://docs.openstack.org/openstacksdk/latest/user/connection.html#openstack.connection.Connection).
+
+> There is 3 ways to create a connection object (_here the [Link](https://docs.openstack.org/openstacksdk/latest/user/guides/connect.html) of the official documentation_) but the most re comended one is through [Config Files](https://docs.openstack.org/openstacksdk/latest/user/config/configuration.html#config-clouds-yaml)
+
+> For the testing case that you can see on this repo I used the **Config Files**
 
 </details>
