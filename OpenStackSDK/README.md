@@ -4,6 +4,8 @@
 
 > This repository contains information related to the OpenStackSDK, primarily focusing on listing, modifying, creating, and deleting resources within your OpenStack environment using the SDK interface.
 
+- Module: **Instances**
+
 > To interact with the OpenStack platform through this SDK, certain requirements must be met to ensure access to the OpenStack environment. The interaction process is outlined as follows:
 
 > As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
