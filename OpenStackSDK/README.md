@@ -1,30 +1,34 @@
 # OpenStackSDK
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Objective](#objective)
+- [Pre-Requisites](#pre-requisites)
+  - [SDK Requisites](#sdk-requisites-click-to-expand)
+
 ## Introduction
 
-> This repository contains information related to the OpenStackSDK, primarily focusing on listing, modifying, creating, and deleting resources within your OpenStack environment using the SDK interface.
+This repository contains information related to the OpenStackSDK, primarily focusing on listing, modifying, creating, and deleting resources within your OpenStack environment using the SDK interface.
 
 - Module: **Instances**
 
-> To interact with the OpenStack platform through this SDK, certain requirements must be met to ensure access to the OpenStack environment. The interaction process is outlined as follows:
-
-> As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
-
 ## Objective
 
-> Testing OpenStack functionalities using the Python library. Establishing connectivity with Horizon and other OpenStack components through the SDK.
+Testing OpenStack functionalities using the Python library. Establishing connectivity with Horizon and other OpenStack components through the SDK.
 
+## Pre-Requisites
 
-## Pre-Requisits
+To ensure everything works seamlessly, you need to prepare your environment based on your platform, taking into account the following considerations:
 
-> To ensure everything works seamlessly, you need to prepare your environment based on your platform, taking into account the following considerations:
+- To interact with the OpenStack platform through this SDK, certain requirements must be met to ensure access to the OpenStack environment. The interaction process is outlined as follows.
+
+As depicted in the image, OpenStack exposes various services that can be accessed externally through the SDK. It establishes an HTTPS tunnel to communicate with different endpoints, facilitating the retrieval of responses.
 
 <details>
-<summary>SDK Requisits (click para expandir)</summary>
+<summary>SDK Requisites (click to expand)</summary>
 
-> Required software
-
-> In my case, when testing all these functionalities, I had to perform the tasks on Windows. However, the requirements may vary for you, depending on your operating system.
+> Software required
 
 - Install [Python](https://www.python.org/downloads/)
 - Upgrade [pip](https://www.wikihow.com/Update-Pip)
