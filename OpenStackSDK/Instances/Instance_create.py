@@ -3,31 +3,36 @@ import openstack
 def list_flavors(conn):
     flavors = conn.compute.flavors()
     print("Available flavors:")
+    print('')
     for flavor in flavors:
         print(f"ID: {flavor.id}, Name: {flavor.name}")
 
 def list_images(conn):
     images = conn.compute.images()
     print("Available images:")
+    print('')
     for image in images:
         print(f"ID: {image.id}, Name: {image.name}")
 
 def list_networks(conn):
     networks = conn.network.networks()
     print("Available networks:")
+    print('')
     for network in networks:
         print(f"ID: {network.id}, Name: {network.name}")
 
 def create_keypair(conn, keypair_name):
     print(f"Creating keypair '{keypair_name}'...")
+    print('')
     keypair = conn.compute.create_keypair(name=keypair_name)
     print("Keypair created successfully.")
+    print('')
     return keypair
 
 def create_instance(conn, instance_name, flavor_name, image_id, keypair_name):
     try:
         print(f"Creating instance '{instance_name}'...")
-
+        print('')
         # Get the flavor ID based on the flavor name
         flavor = conn.compute.find_flavor(flavor_name)
         if flavor is None:
@@ -37,6 +42,7 @@ def create_instance(conn, instance_name, flavor_name, image_id, keypair_name):
         # List and select a network
         list_networks(conn)
         network_id = input("Enter the ID of the network to use: ")
+        print('')
 
         # Create the instance
         instance = conn.compute.create_server(
@@ -59,13 +65,16 @@ conn = openstack.connect(cloud='openstack')
 
 # List and select a flavor
 list_flavors(conn)
+print('')
 flavor_id = input("Enter the ID of the flavor to use: ")
 
 # List and select an image
 list_images(conn)
+print('')
 image_id = input("Enter the ID of the image to use: ")
 
 # Enter the instance name
+print('')
 instance_name = input("Enter the name for the new instance: ")
 
 # Create keypair with the same name as the instance
