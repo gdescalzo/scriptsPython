@@ -33,7 +33,7 @@
 </details>
 
 <details>
-<summary>SDK ### Configuration (click to expand)</summary>
+<summary>SDK Configuration (click to expand)</summary>
 
 > To use the SDK you should have the configure:
 
