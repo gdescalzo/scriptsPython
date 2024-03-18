@@ -1,0 +1,7 @@
+xlwt
+pandas
+datetime
+openpyxl
+azure.identity
+azure.mgmt.monitor 
+azure.mgmt.subscription 
