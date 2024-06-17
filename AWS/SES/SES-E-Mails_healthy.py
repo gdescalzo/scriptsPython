@@ -14,7 +14,7 @@ def load_credentials(json_filepath):
     return access_key, secret_access_key, region_name
 
 # Use the function to load credentials:
-filepath = r'C:\Users\descalzo\OneDrive - Boehringer Ingelheim\Documents\Repos\scriptsPython\AWS\SES\Credentials.json'
+filepath = r'C:\SOME_PATH\Repos\scriptsPython\AWS\SES\Credentials.json'
 access_key, secret_access_key, region_name = load_credentials(filepath)
 
 # Initialize the AWS Health client
